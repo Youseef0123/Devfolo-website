@@ -1,0 +1,654 @@
+:root{
+    --main-color:#1E1E1E;
+   
+
+}
+body{
+
+    font-family: font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main-bar{
+
+
+}
+
+.acption-home{
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5))   ,url(../images/hero-bg.jpg);
+    background-size: cover;
+    height:100vh;
+    background-position: center center;
+
+}
+.acption-home h1{
+    font-size: 72px;
+    line-height:86.4px;
+    font-weight: 600;
+}
+nav{
+    background-color: black;
+    height: 70px;
+    font-weight: 600;
+    z-index: 99999;
+
+}
+
+
+.navbar-brand{
+    font-size: 28px;
+}
+.nave-links ul li a {
+    color: #fff;
+    margin-right: 10px;
+
+}
+.nav-item .drop-menu ul li a{
+    color: black;
+
+}
+#navbarSupportedContent a{ 
+   position: relative;
+
+}
+#navbarSupportedContent a::before{ 
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: -3px;
+    transition: width 400ms;
+
+}
+#navbarSupportedContent a:hover::before{ 
+    width: 100%;
+
+}
+/* active navbar */
+body:not(:has(:target)) .home-link,
+body:has(.home:target) .home-link,
+body:has(.about:target) .about-link,
+body:has(.blog:target) .blog-link,
+body:has(.service:target) .service-link,
+body:has(.protfolio:target) .protfolio-link{
+    color:#fff;
+    
+}
+body:not(:has(:target)) .home-link::before,
+body:has(.home:target) .home-link::before,
+body:has(.about:target) .about-link::before,
+body:has(.blog:target) .blog-link::before,
+body:has(.protfolio:target) .protfolio-link::before,
+body:has(.service:target) .service-link::before{
+    width: 100%;
+
+}
+
+/* home */
+.home h4::after{
+    content: "|";
+    color:#fff;
+    
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+
+}
+
+@keyframes typing {
+    0%{content:"D|";}
+    2%{content:"De|";}
+    4%{content:"Dev|";}
+    6%{content:"Deve|";}
+    8%{content:"Devel|";}
+    10%{content:"Develo|";}
+    12%{content:"Develop|";}
+    14%{content:"Develope|";}
+    16%{content:"Developer|";}
+    20%{content:"Develope|";}
+    22%{content:"Develop|";}
+    24%{content:"Develo|";}
+    26%{content:"Devel|";}
+    28%{content:"Deve|";}
+    30%{content:"Dev|";}
+    32%{content:"De|";}
+    34%{content:"D|";}
+    36%{content:"|";}
+    38%{content:"D|";}
+    40%{content:"De|";}
+    42%{content:"Des|";}
+    44%{content:"Desi|";}
+    46%{content:"Desig|";}
+    48%{content:"Design|";}
+    50%{content:"Designe|";}
+    52%{content:"Designer|";}
+    54%{content:"Designe|";}
+    56%{content:"Design|";}
+    58%{content:"Desig|";}
+    60%{content:"Desi|";}
+    62%{content:"Des|";}
+    64%{content:"De|";}
+    66%{content:"D|";}
+    68%{content:"|";}
+   70%{content:"f|";}
+    74%{content:"fre|";}
+    76%{content:"free|";}
+    78%{content:"freel|";}
+    80%{content:"freela|";}
+    82%{content:"freelan|";}
+    84%{content:"freelanc|";}
+    86%{content:"freelance|";}
+    88%{content:"freelancer|";}
+    90%{content:"freelance|";}
+    92%{content:"freelanc|";}
+    94%{content:"freelan|";}
+    96%{content:"freela|";}
+    98%{content:"freel|";}
+    98%{content:"free|";}
+    98%{content:"fre|";}
+    
+}
+
+
+
+/* about*/
+
+.about{
+    color: black;
+    
+    width: 100%;
+    background-color: #F5F5F5;
+    box-shadow: 5px 5px 5px rgb(236, 232, 232) ;
+}
+.about .photo-about p{
+    font-size: 20px;
+    color:#4E4E4E ;
+}
+.about picture img{
+   width: 100%;
+}
+hr{
+    position: relative;
+    height: 3px;
+    background-color:#0078FF ;
+
+}
+.about .person-skills .progrees{
+    height: 10px;
+    width: 100%;
+    background-color: #CDE1F8;
+}
+.about .person-skills .progrees .inner-progrees{
+    height: 10px;
+    width: 100%;
+    background-color: #0078FF;
+}
+
+
+.service>* {
+    background-color:#fff;
+}
+
+.service .our-service{
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    margin-bottom: 20px;
+    width: 32%;
+   
+}
+.service .our-service i{
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 8px solid #0078FF ;
+    border-radius: 50%;
+    transition:background-color 400ms ,border 400ms ;
+
+}
+.hr-service{
+    background-color:#0078FF;
+    width: 5%;
+    text-align: center;
+    font-size:3px;
+}
+
+.service .our-service:hover i{
+    background-color: #0078FF;
+    border:solid 8px #CDE1F8;
+    color: #fff;
+}
+
+/* counter */
+.counter{
+    background-image:linear-gradient(rgba(40,124,217,.7),rgba(40,124,217,.7)) ,url(../images/post-3.jpg);
+    height: 50vh;
+    background-position:center;
+    background-size:cover;
+
+}
+.counter-sec i{
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 8px solid #CDE1F8 ;
+    border-radius: 50%;
+    color: #fff;
+
+}
+
+
+/* protfolio */
+#Protfolio{
+    background-color: #F5F5F5;
+    margin-top: 40px;
+}
+
+.protfolio .protfolio-sec{
+    border-radius: 20px;
+    background-color: #fff;
+    margin-left: 15px;
+    width:32%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+   
+}
+.protfolio .protfolio-sec:hover  img{
+
+    transform: scale(120%);
+   
+}
+.protfolio .protfolio-sec img{
+    width: 100%;
+    transition:transform .8s;
+   
+}
+
+/* slider */
+
+#slider .slider-img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+.slider{
+    background-image: url(../Images/overlay-bg.jpg);
+    background-position: cover;
+    background-position: center center;
+}
+.slider .overlay-mf{
+    background-color: rgba(0,0,350,0.6);
+    height: 70vh;
+}
+
+
+/* blog */
+
+#blog{
+    background-color: #F5F5F5;
+}
+
+.hr-blog{
+    background-color:#0078FF;
+    width:5%;
+    text-align: center;
+    font-size:3px;
+    margin-top: 0;
+}
+.blog .img-blog img{
+    width: 100%;
+}
+
+.blog-card{
+    width: 32%;
+}
+
+.hr-text-blog{
+    width: 98%;
+    height: .25px;
+    background-color: #000;
+    opacity: .2;
+    text-align: center;
+}
+.mini-img-blog img{
+    width: 20%;
+
+}
+
+.blog-card  .img-blog {
+    position: relative;
+}
+.blog-card .img-blog::before{
+    content: "TRAVEL";
+    padding-top: 4px;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background-color:#0078FF;
+    border-radius: 8PX;
+    bottom: 4%;
+    right: 42%;
+}
+
+
+/* contact */
+#Contact{
+    background-image: linear-gradient(rgba(40,124,217,.7),rgba(40,124,217,.7)),url(../images/overlay-bg.jpg);
+    background-position: center center;
+    height: 100vh;
+    background-size: cover;
+    padding-top: 50px;
+}
+.contact-card{
+    background-color: #fff;
+    margin-top: 60px;
+    padding: 30px;
+}
+.form-contact .fild input ,textarea {
+    width: 100%;
+    height:40px;
+    border: solid 1px rgb(228, 223, 223);
+    margin-bottom: 20px;
+}
+.form-contact .fild textarea {
+   resize:vertical;
+   height:150px;
+}
+form a{
+    font-size: 18px;
+    font-weight: 400;
+    background-color:#0078FF;
+    text-align: center;
+    
+  
+}
+.button1{
+    width: 40%;
+}
+form a:hover{
+    background-color:#3393FF ;
+    border: solid 3px #adc4df;
+  
+}
+.text-contact p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    color: black;
+    
+
+   
+}
+.footer-icon-contact ul li{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+  
+    color: #f8f8f8; 
+     
+    text-align: center;
+    padding: 10px;
+    
+    border: solid 4px #0078FF;
+    border-radius: 50%;
+}
+.footer-icon-contact ul{
+    text-decoration: none;
+    
+}
+.footer-icon-contact ul li i{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+   
+    
+    
+
+}
+
+.footer-icon-contact ul li:hover{
+    background-color: #0078FF;
+    border:solid 8px #CDE1F8;
+    color: #fff;
+}
+
+
+
+
+
+/* navbar */
+
+
+
+@media screen and (max-width:990px){
+    .collapse {
+        background-color: #fff;
+        float: left;
+       
+       
+    }
+    #Contact{
+        background-image: linear-gradient(rgba(40,124,217,.7),rgba(40,124,217,.7)),url(../images/overlay-bg.jpg);
+        background-position: center center;
+        height: 120vh;
+        background-size: cover;
+        padding-top: 50px;
+    }
+
+
+
+    .collapse ul li a{
+      color: #000;
+       
+    }
+    .collapse ul li{
+      left: 0px;
+      padding-left: 0px;
+      margin-left: 0px;
+       
+    }
+    body:not(:has(:target)) .home-link,
+body:has(.home:target) .home-link,
+body:has(.about:target) .about-link,
+body:has(.blog:target) .blog-link,
+body:has(.service:target) .service-link,
+body:has(.protfolio:target) .protfolio-link{
+    color:#000;
+    
+}
+}
+
+
+@media screen and (max-width:600px){
+    .home h1{
+        font-size:60px;
+    }
+}
+/* servics */
+@media screen and (max-width:770px){
+    .service .our-service{
+        width:100%;
+       
+    }
+   
+}
+
+/*Protfolio  */
+@media screen and (max-width:1200px){
+    .protfolio .protfolio-sec{
+        width:30%;
+       
+    }
+   
+}
+@media screen and (max-width:770px){
+    .protfolio .protfolio-sec{
+        width:85%;
+        margin: auto;
+       
+    }
+   
+}
+/* number */
+@media screen and (max-width:770px){
+    .counter-sec{
+        display: flex;
+        margin: auto;
+       
+    }
+   
+}
+
+
+
+/* blog */
+@media screen and (max-width:770px){
+    .blog-card{
+     width:100%;
+    }
+    #Contact{
+        background-image: linear-gradient(rgba(40,124,217,.7),rgba(40,124,217,.7)),url(../images/overlay-bg.jpg);
+        background-position: center center;
+        height: 200vh;
+        background-size: cover;
+        padding-top: 50px;
+    }
+
+    .text-contact {
+      
+       margin-top: 40px;
+       
+    }
+
+    /* slider */
+
+    .slider .carousel-item img{
+        width: 30%;
+       
+    }
+    
+    .slider .carousel-item p{
+        width: 80%;
+        margin:auto;
+    }
+
+
+    /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+    .counter-sec {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+}
+
+
+   
+}
+@media screen and (max-width:995px){
+    .footer-icon-contact ul li a{
+        color: #000;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 15px;
+        height: 15px;
+       
+        
+        
+    
+    }
+    .footer-icon-contact ul li a i{
+        font-size: 15px;
+
+    }
+    .navbar .navbar-nav .nav-item {
+        
+    }
+    .navbar .navbar-nav .nav-item a{
+        display: flex;
+        margin-left:-40%;
+
+
+    }
+    .navbar {
+        background-color: #000;
+
+    }
+    #navbarSupportedContent a:hover::before{ 
+        width: 0%;
+    
+    }
+
+   
+}
+@media screen and (max-width:650px){
+    #Contact{
+        background-image: linear-gradient(rgba(40,124,217,.7),rgba(40,124,217,.7)),url(../images/overlay-bg.jpg);
+        background-position: center center;
+        height: 180vh;
+        background-size: cover;
+        padding-top: 50px;
+    }
+
+   
+}
+@media screen and (max-width:580px){
+    .counter-sec1  {
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    
+    }
+    #Contact{
+        background-image: linear-gradient(rgba(40,124,217,.7),rgba(40,124,217,.7)),url(../images/overlay-bg.jpg);
+        background-position: center center;
+        height: 180vh;
+        background-size: cover;
+        padding-top: 50px;
+    }
+    .counter{
+        background-image:linear-gradient(rgba(40,124,217,.7),rgba(40,124,217,.7)) ,url(../images/post-3.jpg);
+        height:150vh;
+        
+    
+    }
+
+   
+}
+
+
+
